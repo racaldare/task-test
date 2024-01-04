@@ -1,0 +1,29 @@
+Note: This instruction was tested on a fresh Ubuntu.
+If something does not work for you, please do not hesitate to contact me, I will be extremely happy to help! :)
+Step 1: Get a new ubuntu OS.
+Step 2: Install curl.
+    a) sudo apt install curl
+Step 3: Install current stable node version (20.10)
+    a) cd ~
+    b) curl -sL https://deb.nodesource.com/setup_20.x -o /tmp/nodesource_setup.sh
+    c) sudo bash /tmp/nodesource_setup.sh
+    d) sudo apt install nodejs
+    e) Check node version: node -v (should be 20 something)
+    f) Check npm version: npm --version (should be 10.2.x)
+    g) Install typescript globally: npm install -g typescript
+    h) Install all packages (just in case) for both applications at root level (look for package.json)
+        a) npm install
+    i) Build both projects at the root level (same as previous)
+        a) tsc
+
+Both applocations should now be working
+To start them, just enter the following commands accordingly (in the root folder of each app)
+1) npm run app
+2) npm run server
+
+....
+
+In case things go WRONG (especialy with Unix socket and the file):
+After Ubuntu boots for first time, nodejs and net package just refuses to run an Unix socket. <reinstalling ubuntu also takes long to test :(> 
+Please, try restarting the computer (that helped me).
+If not, I will gladly help with this issue as this solution has been developed on Linux latest stable version.

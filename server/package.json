@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@types/node": "^20.10.6"
+  },
+  "scripts": {
+    "server": "node ./dist/server/src/server.js"
+  }
+}

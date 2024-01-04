@@ -1,0 +1,37 @@
+password - string
+ID - int
+list of ID
+error code - int
+attempt - string
+hint - string
+isWordguessed - boolean
+checksum
+
+codes:
+0-9: success
+0 - general success
+1 - authorised
+3 - game finished
+
+10-19: requests
+10 - authorise
+11 - request player list
+12 - challange player
+13 - challange notification
+14 - challange accepted
+15 - room created, game started
+16 - send attempt
+17 - send hint
+18 - player gave up, finish game
+19 - send list of ids
+
+20-29: errors
+20 - unexpected error
+21 - unauthorised
+22 - incorrect password
+23 - refuse challenge
+24 - player disconnected
+25 - player refused
+
+30-39: server issues
+30 - server closed connections

@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@inquirer/prompts": "^3.3.0"
+  },
+  "devDependencies": {
+    "mute-stream": "^1.0.0"
+  },
+  "scripts": {
+    "app": "node ./dist/app/src/game.js"
+  }
+}
